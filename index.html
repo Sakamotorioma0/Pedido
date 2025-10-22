@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papeleria</title>
+    <link rel="stylesheet" href="rec/css/bootstrap.min.css">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span> 
+                </button>
+                <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+                    <a class="navbar-brand icon" href="#"><img width="100%" class="d-inline-block align-text-top" src="rec/img/logo.ico" alt=""></a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <h1>Pedido de Papeleria</h1>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex buscador" role="search">
+                        <input id="input-buscar" class="form-control me-4" type="text" .placeholder="Buscar" aria-label="Search" />
+                        <i class="bx bx-shopping-bag btn btn-outline-success " type="button" id="cart-icon"></i>
+
+                    </form>
+                    <!-- Carrito -->
+
+                </div>
+            </div>
+        </nav>
+        <div class="cart" id="cart">
+            <h2 style="color: aliceblue; border:1px;" class="card-title ">Pedido</h2>
+
+
+
+            <!-- CONTENT -->
+            <div class="cart-content">
+
+
+            </div>
+
+            <!-- TOTAL -->
+            <div class="total">
+
+            </div>
+
+            <!-- BUY BOTTON -->
+            <div class="input-group mb-3">
+                <input id="inUs" type="text" class="form-control" placeholder="solicitado por:">
+                <input id="inLugar" type="text" class="form-control" placeholder="Lugar:">
+            </div>
+            <button type="button" class="btn-buy">Descarga y Realizar Pedido</button>
+
+            <!-- CART CLOSE -->
+            <i class="bx bx-x btn-close" id="cart-close" type="button" aria-label="Close"></i>
+        </div>
+    </header>
+    <section class="container">
+
+
+        <span class=" alert alert-dark mx-auto col-2  " role="alert" id="fecha-actual"></span> <br><br>
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="lista-productos">
+
+            <div class="col" id="">
+                <div class="producto card " data-nombre="Papel boand carta" data-categoria="Accesorios">
+                    <p class="card-body ">
+                        <span class="card-subtitle">Papel boand carta</span>
+                    </p>
+
+                    <i class=" btn btn-light add-cart ">Pedir</i>
+                </div>
+
+            </div>
+            <div class="col" id="">
+                <div class="producto card " data-nombre="Lapiz Madera" data-categoria="Accesorios">
+                    <p class="card-body ">
+                        <span class="card-subtitle">Lapiz Madera</span>
+                    </p>
+
+                    <i class=" btn btn-light add-cart ">Pedir</i>
+                </div>
+
+            </div>
+            <div class="col col" id="">
+                <div class="producto card " data-nombre="Papel boand Oficio" data-categoria="Accesorios">
+                    <p class="card-body ">
+                        <span class="card-subtitle">Papel boand Oficio</span>
+                    </p>
+
+                    <i class=" btn btn-light add-cart ">Pedir</i>
+                </div>
+
+            </div>
+            <div class="col col" id="">
+                <div class="producto card " data-nombre="Pluma Negra" data-categoria="Accesorios">
+                    <p class="card-body ">
+                        <span class="card-subtitle">Pluma Negra</span>
+                    </p>
+
+                    <i class=" btn btn-light add-cart ">Pedir</i>
+                </div>
+
+            </div>
+            <div class="col col" id="">
+                <div class="producto card " data-nombre="Gomas" data-categoria="Accesorios">
+                    <p class="card-body ">
+                        <span class="card-subtitle">Gomas</span>
+                    </p>
+
+                    <i class=" btn btn-light add-cart ">Pedir</i>
+                </div>
+
+            </div>
+            <div class="col col" id="">
+                <div class="producto card " data-nombre="Tinta impresora hp 46 Negra" data-categoria="Accesorios">
+                    <p class="card-body ">
+                        <span class="card-subtitle">Tinta impresora hp 46 Negra</span>
+                    </p>
+
+                    <i class=" btn btn-light add-cart ">Pedir</i>
+                </div>
+
+            </div>
+            <div class="col col" id="">
+                <div class="producto card " data-nombre="Tinta impresora hp 46 Amarilla" data-categoria="Accesorios">
+                    <p class="card-body ">
+                        <span class="card-subtitle">Tinta impresora hp 46 Amarilla</span>
+                    </p>
+
+                    <i class=" btn btn-light add-cart ">Pedir</i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <footer></footer>
+
+    <script src="rec/js/main.js"></script>
+    <!--Scipts botstrap-->
+    <script src="rec/js/bootstrap.bundle.min.js"></script>
+    <script src="rec/js/bootstrap.min.js"></script>
+    <!--Script SheetJS-->
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+</body>
+
+</html>
